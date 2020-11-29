@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<beans>
+    <bean id="Student" class="demo.ioc.stu.Student">
+        <property name="name" value="Hover"/>
+        <property name="add" value="China"/>
+    </bean>
+ 
+    <bean id="StudentService" class="demo.ioc.stu.StudentService">
+        <property ref="Student"/>
+    </bean>
+    
+    
+    <bean id="Student" class="demo.ioc.stu.Student">
+        <property name="name" value="d"/>
+        <property name="add" value="cqu"/>
+    </bean>
+ 
+    <bean id="stu1" class="demo.ioc.stu.StudentService">
+        <property ref="Student"/>
+    </bean>
+    
+    
+</beans>
